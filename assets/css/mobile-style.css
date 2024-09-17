@@ -1,0 +1,157 @@
+/* mobile-styles.css */
+
+/* Медиа-запрос для экранов шириной 600px и меньше */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column; /* Кнопки будут располагаться одна под другой */
+        align-items: center; /* Выравнивание кнопок по центру */
+    }
+
+    .styled-button {/* Основные стили для мобильных устройств */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        
+            table {
+                width: 100%;
+                font-size: 14px;
+            }
+        
+            th, td {
+                padding: 8px;
+            }
+        
+            input {
+                width: 100%;
+            }
+        
+            #datePicker {
+                width: 100%;
+            }
+        
+            .button-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        
+            .styled-button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        
+            .date-time {
+                font-size: 16px;
+            }
+        }
+        
+        /* Средние экраны (планшеты) */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            body {
+                padding: 15px;
+            }
+        
+            h1 {
+                font-size: 28px;
+            }
+        
+            table {
+                font-size: 16px;
+            }
+        
+            th, td {
+                padding: 10px;
+            }
+        
+            input {
+                width: 95%;
+            }
+        
+            #datePicker {
+                width: 200px;
+            }
+        
+            .button-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+        
+            .styled-button {
+                width: auto;
+                margin: 0 5px;
+            }
+        
+            .header-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        
+            .date-time {
+                font-size: 18px;
+            }
+        }
+        
+        /* Большие экраны (десктопы) */
+        @media (min-width: 1025px) {
+            body {
+                padding: 20px;
+            }
+        
+            h1 {
+                font-size: 32px;
+            }
+        
+            table {
+                font-size: 18px;
+            }
+        
+            th, td {
+                padding: 12px;
+            }
+        
+            input {
+                width: 90%;
+            }
+        
+            #datePicker {
+                width: 150px;
+            }
+        
+            .button-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+        
+            .styled-button {
+                width: auto;
+                margin: 0 10px;
+            }
+        
+            .header-container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        
+            .date-time {
+                font-size: 20px;
+            }
+        }
+        
+        width: 100%; /* Кнопки занимают всю ширину родительского контейнера */
+        margin-bottom: 10px; /* Отступ между кнопками */
+    }
+
+    .styled-button:last-of-type {
+        margin-bottom: 0; /* Убираем отступ у последней кнопки */
+    }
+}

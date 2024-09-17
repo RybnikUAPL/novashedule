@@ -1,0 +1,118 @@
+#schedule th, #schedule td:first-child {
+    background-color: lightgrey;
+}
+
+/* Стили для поля выбора даты */
+#date-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Выравнивание содержимого контейнера по правому краю */
+    margin-top: 10px; /* Отступ сверху, если нужен */
+}
+
+/* Стили для метки выбора даты */
+#date-container label {
+    margin-right: 10px; /* Отступ справа от метки для отделения от поля выбора даты */
+}
+/* Стили для поля выбора даты */
+#datePicker {
+    width: 150px;
+    padding: 5px;
+    border: 2px solid #ccc; /* Граница серого цвета, 2 пикселя толщиной */
+    border-radius: 5px; /* Закругление углов на 5 пикселей */
+}
+
+/* Стили для контейнера заголовка */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Стили для даты и времени */
+.date-time {
+    font-size: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Расстояние между кнопками */
+    margin-top: 20px; /* Отступ сверху для кнопок */
+}
+
+.styled-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.save-button {
+    background-color: #4CAF50; /* Зеленый цвет для кнопки "Сохранить" */
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #45a049; /* Темный зеленый при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button {
+    background-color: #f44336; /* Красный цвет для кнопки "Удалить" */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #da190b; /* Темный красный при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактор еженедельных расписаний</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mobile-style.css"> <!-- CSS файл для мобильных устройств -->
+
+</head>
+<body>
+    <h1>Редактор еженедельных расписаний</h1>
+    <div class="header-container"></div>
+        <div class="date-time">
+            <span id="currentDate"></span>
+            <span id="currentTime"></span>
+        </div>
+    </div>
+    <!-- Поля для выбора даты -->
+    <div id="date-container">
+        <label for="date">Выберите дату: </label>
+        <input type="date" id="datePicker">
+    </div>
+
+    <table id="schedule">
+        <thead>
+            <tr>
+                <th>Время</th>
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Среда</th>
+                <th>Четверг</th>
+                <th>Пятница</th>
+                <th>Суббота</th>
+                <th>Воскресенье</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Временные слоты будут добавлены с помощью JavaScript -->
+        </tbody>
+    </table>
+    <div class="button-container">
+        <button id="saveButton" class="styled-button save-button">Сохранить расписание</button>
+        <button id="deleteButton" class="styled-button delete-button">Удалить расписание</button>
+    </div>
+    
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
